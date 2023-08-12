@@ -40,7 +40,7 @@ public class CourseServiceimpl implements CourseService {
 //				break;
 //			}
 //		}
-		return courseDao.getOne(courseId);
+		return courseDao.findById(courseId).get();
 	}
 
 	@Override
